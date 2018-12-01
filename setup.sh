@@ -88,7 +88,7 @@ chmod 644 "${HOME_DIR}/.bash_profile" "${HOME_DIR}/.bashrc"
 # create .ssh
 mkdir -p "${HOME_DIR}/.ssh"
 echo "PATH=${HOME_DIR}/bin" > "${HOME_DIR}/.ssh/environment"
-chown -R root:root "${HOME_DIR}/.ssh"
+chown -R ${BACKUP_RUNNER}:${BACKUP_RUNNER} "${HOME_DIR}/.ssh"
 
 cat << EOD
 ================================================================================
