@@ -78,7 +78,7 @@ if [[ ! -z "${CLEAR_CMD}" ]]; then
 fi
 
 # restrict the command search path and built in commands.
-echo "PATH=${HOME_DIR}/bin" >> "${HOME_DIR}/.bash_profile"
+echo "export PATH=${HOME_DIR}/bin" >> "${HOME_DIR}/.bash_profile"
 echo "enable -n kill" >> "${HOME_DIR}/.bash_profile"
 echo "enable -n set" >> "${HOME_DIR}/.bash_profile"
 echo "enable -n enable" >> "${HOME_DIR}/.bash_profile"
