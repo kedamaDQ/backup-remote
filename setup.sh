@@ -105,7 +105,7 @@ cat << EOD
 
    then, change owner of '.ssh' directory to root.
 
-   chown -R root:root ${HOME_DIR}/.ssh
+   chown -R root:root ${HOME_DIR}/.ssh/*
 
 3. change 'PermitUserEnvironment' setting of '/etc/ssh/sshd_config' to 'yes'.
 
